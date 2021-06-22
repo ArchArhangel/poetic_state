@@ -1,0 +1,151 @@
+.work-teasers .view-content{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.work-teasers .views-row{
+  height: fit-content;
+}
+.block-views-blockwork-block-1 .view-content{
+  max-width: 1000px;
+}
+.block-views-blockwork-block-1 .view-header{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0px;
+  background-color: transparent;
+  font-family: 'Nitti v500', Arial, sans-serif;
+  a{
+    position: absolute;
+    top: -5.5em;
+    color: #2d3691;
+    text-decoration: none;
+    &:hover{
+      text-decoration: none;
+      color: #2d3691;
+    }
+  }
+}
+.block-views-blockwork-block-1 h2 {
+  margin-top: 0px;
+  font-family: Karla, sans-serif;
+  font-size: 40px;
+  line-height: 45px;
+  font-weight: 700;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.node--type-cases .block-views-blockwork-block-1 .view-header{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0px;
+  background-color: transparent;
+  font-family: 'Nitti v500', Arial, sans-serif;
+  a{
+    position: absolute;
+    top: -4.5em;
+    color: #2d3691;
+    text-decoration: none;
+    &:hover{
+      text-decoration: none;
+      color: #2d3691;
+    }
+    &::after {
+      content: "→";
+      font-family: 'Karla', sans-serif;
+      color: #2d3691;
+      padding-left: 7px;
+    }
+  }
+}
+.node--type-cases .block-views-blockwork-block-1 h2 {
+  font-family: Karla, sans-serif;
+  font-size: 40px;
+  line-height: 45px;
+  font-weight: 700;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.work-teasers .work-cases-blocks{
+  overflow: hidden;
+  margin: 1.5em auto;
+  position: relative;
+  height: fit-content;
+  color: #fff;
+  background-color: rgb(23, 23, 23);
+  &:hover {
+    img {
+      opacity: 0;
+      transition-timing-function: ease-in-out;
+      transition-duration: .5s;
+    }
+  }
+  img {
+    opacity: 1;
+    transition-timing-function: ease-in-out;
+    transition-duration: 1s;
+  }
+}
+.work-teasers .work-cases-blocks .work-cases-text {
+  position: absolute;
+  margin-top: auto;
+  bottom: 1.5em;
+  left: 2em;
+  margin-right: 2em;
+  cursor: pointer;
+}
+.work-teasers .work-cases-blocks .field--name-node-title{
+  h2 {
+    font-family: Karla, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 45px;
+    padding-left: 0em;
+    text-align: left;
+    padding-right: 0em;
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+}
+.work-teasers .work-cases-blocks .field--name-field-service-title {
+  margin-bottom: 3em;
+  font-family: Karla, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.work-teasers .view-content .views-row .work-cases-blocks .field--name-node-link {
+  font-size: 14px;
+  font-weight: normal;
+  font-family: 'Nitti v500', Arial, sans-serif;
+  a {
+    color: #fff;
+    font-family: 'Nitti v500', Arial, sans-serif;
+    &:hover {
+      text-decoration: none;
+    }
+    &:active {
+      text-decoration: none;
+    }
+    &:focus {
+      text-decoration: none;
+    }
+    &::after {
+      content: "→";
+      font-family: 'Karla', sans-serif;
+      color: #fff;
+      padding-left: 7px;
+    }
+  }
+}
+.node--type-cases .work-teasers .view-content{
+  width: 100%;
+  max-width: 1440px;
+}
+.node--type-cases #block-poetic-content {
+  margin-bottom: 100px;
+}

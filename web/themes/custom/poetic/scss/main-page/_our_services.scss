@@ -1,0 +1,85 @@
+@import "../mixins";
+#block-views-block-what-can-we-build-together-block-1 {
+  padding: 190px 0;
+  .contextual-region {
+    position: static;
+  }
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  h2 {
+    margin-left: auto;
+    font-family: Karla, sans-serif;
+    font-size: 40px;
+    line-height: 45px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #2D3691, #45C896);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 900px;
+  }
+  .content {
+    margin: 0 auto;
+
+    .view-content {
+      padding: 0 30px;
+      max-width: 940px;
+      margin-left: auto;
+      .item-list {
+        width: 100%;
+      }
+      .list-group-item {
+        opacity: 0;
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 24px 0;
+        font-family: Karla, sans-serif;
+        font-size: 18px;
+        color: #333;
+        margin: 0;
+      }
+    }
+    .view-header {
+      a {
+        position: absolute;
+        top: 190px;
+        left: 0;
+        font-family: 'Nitti v500', Arial, sans-serif;
+        color: #171717;
+        font-size: 14px;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+      a::after {
+        content: "→";
+        font-family: 'Karla', sans-serif;
+        color: #171717;
+        padding-left: 7px;
+      }
+    }
+    .view-footer {
+      max-width: 900px;
+      margin: 60px 0 0 auto;
+      a {
+        color: #2d3691;
+        font-size: 16px;
+        font-family: 'Nitti v500', Arial, sans-serif;
+        text-decoration: none;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #2d3691;
+      }
+      a::after {
+        content: "→";
+        font-family: 'Karla', sans-serif;
+        font-size: 16px;
+        color: #2d3691;
+        padding-left: 16px;
+      }
+    }
+  }
+  .animated-item {
+    @include appear_from_bottom;
+  }
+}
+

@@ -1,0 +1,34 @@
+@import 'views-main-body';
+@import 'views-main-body-adaptivity';
+@import "case-studies";
+@import "simple_paragraphs";
+@import "simple_paragraph_adaptivity";
+@import "case-studies-1919";
+@import "case-studies-1439";
+@import "case-studies-991";
+@import "case-studies-767";
+@import "case-studies-479";
+@font-face {
+  font-family: 'Tiempostextweb';
+  src: url('https://assets.website-files.com/5dced91b6467912d0fa28335/5dceeef96467913893a3a426_TiemposTextWeb-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: auto;
+}
+@font-face {
+  font-family: 'Tiempostextweb';
+  src: url('https://assets.website-files.com/5dced91b6467912d0fa28335/5dceeef9a5aec07afeda2f29_TiemposTextWeb-BoldItalic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+  font-display: auto;
+}
+@font-face {
+  font-family: 'Tiempostextweb';
+  src: url('https://assets.website-files.com/5dced91b6467912d0fa28335/5dceeec5a8c4102732ed4ff0_TiemposTextWeb-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+}
+@import "work-header-block";
+
+

@@ -1,0 +1,37 @@
+@import "animation";
+body.path-frontpage{
+  #page {
+    position: relative;
+  }
+  header#header {
+    transform: translateY(-100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    animation: slide_down .3s 1;
+    animation-delay: $delay-header;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+  }
+
+
+  .featured-top.featured-top-front {
+    min-height: 100vh;
+    padding-top: 60px;
+  }
+}
+
+@keyframes slide_down {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@media (max-width:998px) {
+  body.path-frontpage header#header {
+    z-index: 10;
+  }
+}

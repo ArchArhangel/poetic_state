@@ -1,0 +1,27 @@
+@media screen and (max-width: 479px) {
+  .cases-container-wrapper {
+    .field--name-field-page-content {
+      .paragraph--type--two-images-gray-bg-paragraph {
+        .paragraph--type--two-images-gray-bg-paragraph-content {
+          .field--name-field-cases-with-titles {
+            flex-direction: column;
+            & > .field__item {
+              width: 100%;
+              padding: 0;
+              margin-bottom: 20px;
+            }
+          }
+
+          #images-wrapper {
+            .field--name-field-bigger-image {
+              left: 10px;
+            }
+            .field--name-field-smaller-image {
+              right: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+@import "../mixins";
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@font-face {
+  font-family: 'Nitti v500';
+  src: url('https://assets.website-files.com/5dced91b6467912d0fa28335/5dcee71313d30e206590e710_nitti-normal-v500.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+}
+.page-view-newspage .layout-main-wrapper .container {
+  @include appear_from_bottom;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-left: 0;
+  padding-right: 0;
+}
+.page-view-newspage .layout-main-wrapper .container .row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 0;
+  margin-right: 0;
+  .main-content {
+    max-width: 70%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 50px;
+  }
+  .sidebar {
+    max-width: 30%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 50px;
+  }
+}
+.page-view-newspage .layout-main-wrapper .container .sidebar {
+  #block-newsalone {
+    .content .field--name-body {
+      p {
+        font-family: 'Nitti v500', Arial, sans-serif;
+        font-size: 20px;
+        line-height: 20px;
+        color: #2d3691;
+      }
+    }
+  }
+}
+@media (max-width: 520px) {
+  .page-view-newspage .layout-main-wrapper .container .row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
+    .main-content {
+      max-width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-top: 50px;
+    }
+    .sidebar {
+      max-width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-top: 50px;
+    }
+  }
+}

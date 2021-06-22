@@ -1,0 +1,67 @@
+.page-view-service .layout-main-wrapper .services-container .main-content {
+  #block-servicesalone {
+    .content .field--name-body .services-alone {
+      @include appear_from_bottom;
+      max-width: 1000px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 150px;
+      margin-bottom: 100px;
+      .services-alone-left {
+        max-width: 30%;
+        p {
+          font-family: 'Nitti v500', Arial, sans-serif;
+          font-size: 20px;
+          line-height: 20px;
+          color: #2d3691;
+        }
+      }
+      .services-alone-right {
+        max-width: 70%;
+        h2 {
+          font-family: 'Karla', sans-serif;
+          font-size: 40px;
+          line-height: 45px;
+          font-weight: 700;
+          padding-bottom: 5px;
+          margin-bottom: 10px;
+          background: linear-gradient(90deg, #2D3691, #45C896);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          color: #2D3691;
+        }
+        p {
+          font-family: 'Karla', sans-serif;
+          font-size: 22px;
+          line-height: 32px;
+          color: #6c6c6c;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 998px) {
+  .page-view-service .layout-main-wrapper .services-container .main-content #block-servicesalone .content .field--name-body .services-alone {
+    flex-wrap: wrap;
+    padding: 0 15px;
+  }
+  .page-view-service .layout-main-wrapper .services-container .main-content .content .view-service .view-content .views-row .views-field-nothing {
+    padding: 3.125rem 10px;
+  }
+}
+@media (max-width: 520px) {
+  .page-view-service .layout-main-wrapper .services-container .main-content #block-servicesalone .content .field--name-body .services-alone {
+    flex-wrap: wrap;
+    .services-alone-left, .services-alone-right {
+      max-width: 100%;
+      padding: 0 15px;
+    }
+  }
+  .page-view-service .layout-main-wrapper .services-container .main-content .content .view-service .view-content .views-row .views-field-nothing {
+    border-top: 1px solid #979797;
+    padding: 3.125rem 10px;
+  }
+}

@@ -1,0 +1,113 @@
+.page-view-newspage #main {
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 50px;
+}
+.page-view-newspage .view-content {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+}
+.page-view-newspage .node--type-news {
+  &:nth-child(2) {
+    padding-left: 0px;
+  }
+  &:last-child {
+    padding-right: 0px;
+  }
+}
+.page-view-newspage .field--name-node-post-date {
+  font-family: 'Nitti v500', Arial, sans-serif;
+  color: #6c6c6c;
+  font-size: 14px;
+}
+.page-view-newspage .field--name-node-title h2{
+  margin-top: 5px;
+  margin-bottom: 20px;
+  line-height: 36px;
+  font-family: Karla, sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  color: #171717;
+}
+.page-view-newspage .field--name-body p{
+  font-family: Tiempostextweb, 'Times New Roman', sans-serif;
+  line-height: 28px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #171717;
+}
+.page-view-newspage .field--name-node-link {
+  font-family: 'Nitti v500', Arial, sans-serif;
+  margin-top: 20px;
+  a{
+    color: #2d3691;
+    text-decoration: none;
+    &:hover {
+      color: #2d3691;
+      text-decoration: none;
+    }
+    &::after {
+      content: "→";
+      font-family: 'Karla', sans-serif;
+      color: #2d3691;
+      padding-left: 7px;
+    }
+  }
+}
+.page-view-newspage .news-block-image {
+  padding-left: 0px;
+}
+.page-view-newspage .news-block-text {
+  padding-right: 0px;
+}
+.page-view-newspage .node--view-mode-teaser {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #979797;
+}
+.page-view-newspage .view-content .views-row .field--name-field-image-for-news img{
+  width: 100%;
+  height: auto;
+  margin-bottom: 1em;
+}
+.page-view-newspage #main nav{
+  position: relative;
+  .pagination {
+    position: absolute;
+    bottom: -1em;
+    margin-left: auto;
+    width: 70%;
+    .page-link {
+      border: none;
+      color: #2d3691;
+      padding-left: 0px;
+      &:hover {
+        color: #2d3691;
+        background: none;
+        outline: none;
+      }
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    .page-item {
+      span{
+        display: none;
+      }
+      a span{
+        font-family: 'Nitti v500', Arial, sans-serif;
+        display: block;
+      }
+    }
+  }
+}
+.page-view-newspage #main .view-footer {
+  right: 0;
+  bottom: .35em;
+  position: absolute;
+}

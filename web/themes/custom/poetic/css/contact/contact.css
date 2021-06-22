@@ -1,0 +1,296 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@keyframes fromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fromInvis {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@font-face {
+  font-family: "Nitti v500";
+  src: url("https://assets.website-files.com/5dced91b6467912d0fa28335/5dcee71313d30e206590e710_nitti-normal-v500.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+}
+.contact-container {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s, transform 0.5s;
+  animation: fromBottom 1 0.5s forwards;
+  animation-delay: 0.3s;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.contact-container .row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 0;
+  margin-right: 0;
+}
+.contact-container .row .main-content {
+  max-width: 70%;
+  padding-left: 0;
+  padding-right: 0;
+}
+.contact-container .row .sidebar {
+  max-width: 30%;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 100px;
+}
+
+.contact-container .sidebar .section .block-block-content .content .field--type-text-with-summary p {
+  font-family: "Nitti v500", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 45px;
+  color: #2d3691;
+}
+
+.contact-container .main-content {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333333;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.contact-container .main-content .block-page-title-block .content h1 {
+  font-family: "Karla", sans-serif;
+  font-size: 40px;
+  line-height: 45px;
+  font-weight: 700;
+  padding-bottom: 5px;
+  margin-bottom: 80px;
+  margin-top: 100px;
+  background: linear-gradient(90deg, #2D3691, #45C896);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #2D3691;
+}
+
+.contact-container .main-content .block-block-content {
+  float: left;
+}
+.contact-container .main-content .block-block-content .content {
+  margin-right: 60px;
+}
+.contact-container .main-content .block-block-content h2 {
+  font-family: "Karla", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #171717;
+  margin-bottom: 10px;
+}
+.contact-container .main-content .block-block-content .content .field--type-text-with-summary h3 {
+  font-family: "Karla", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #171717;
+  margin-bottom: 10px;
+}
+.contact-container .main-content .block-block-content .content .field--type-text-with-summary p {
+  font-family: "Karla", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #171717;
+  margin-bottom: 10px;
+}
+.contact-container .main-content .block-block-content .content .field--type-text-with-summary p a {
+  color: #171717;
+  text-decoration: none;
+  cursor: pointer;
+}
+.contact-container .main-content .block-block-content .content .field--type-link a {
+  font-family: "Nitti v500", Arial, sans-serif;
+  color: #2d3691;
+  text-decoration: none;
+  cursor: pointer;
+}
+.contact-container .main-content .block-block-content .content .field--type-link a::after {
+  content: "→";
+  font-family: "Karla", sans-serif;
+  color: #2d3691;
+  padding-left: 7px;
+}
+.contact-container .main-content .block-block-content .content .field--type-image {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.contact-container .main-content .block-block-content .content .field--type-image img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.contact-container .main-content .block-block-content7b7ffecd-4298-4d46-98a5-991d189fef60 {
+  clear: both;
+}
+.contact-container .main-content .block-block-content7b7ffecd-4298-4d46-98a5-991d189fef60 .content {
+  margin-right: 0;
+}
+
+.contact-container .main-content .block-webform-block {
+  clear: both;
+}
+.contact-container .main-content .block-webform-block h2 {
+  font-family: "Karla", sans-serif;
+  font-size: 40px;
+  line-height: 45px;
+  font-weight: 700;
+  color: #2d3691;
+  margin-bottom: 10px;
+}
+.contact-container .main-content .block-webform-block .webform-ajax-form-wrapper form .form-item-markup {
+  font-family: "Karla", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #171717;
+  margin-bottom: 30px;
+}
+.contact-container .main-content .block-webform-block .webform-ajax-form-wrapper form .form-item-name, .contact-container .main-content .block-webform-block .webform-ajax-form-wrapper form .form-item-email-address, .contact-container .main-content .block-webform-block .webform-ajax-form-wrapper form .form-item-phone, .contact-container .main-content .block-webform-block .webform-ajax-form-wrapper form .form-item-project-description {
+  margin-bottom: 0;
+}
+.contact-container .main-content .block-webform-block .webform-ajax-form-wrapper form .form-item-name label, .contact-container .main-content .block-webform-block .webform-ajax-form-wrapper form .form-item-email-address label, .contact-container .main-content .block-webform-block .webform-ajax-form-wrapper form .form-item-phone label, .contact-container .main-content .block-webform-block .webform-ajax-form-wrapper form .form-item-project-description label {
+  font-family: "Nitti v500", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #6c6c6c;
+  margin-bottom: 5px;
+}
+.contact-container .main-content .block-webform-block .webform-ajax-form-wrapper form .form-item-name input, .contact-container .main-content .block-webform-block .webform-ajax-form-wrapper form .form-item-email-address input, .contact-container .main-content .block-webform-block .webform-ajax-form-wrapper form .form-item-phone input, .contact-container .main-content .block-webform-block .webform-ajax-form-wrapper form .form-item-project-description input {
+  min-height: 40px;
+  height: auto;
+  width: 100%;
+  padding: 8px 12px;
+  vertical-align: middle;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #171717;
+}
+.contact-container .main-content .block-webform-block .webform-ajax-form-wrapper form .form-item-name textarea, .contact-container .main-content .block-webform-block .webform-ajax-form-wrapper form .form-item-email-address textarea, .contact-container .main-content .block-webform-block .webform-ajax-form-wrapper form .form-item-phone textarea, .contact-container .main-content .block-webform-block .webform-ajax-form-wrapper form .form-item-project-description textarea {
+  min-height: 100px;
+  height: auto;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  padding: 0 12px;
+  overflow: auto;
+  vertical-align: middle;
+  background-color: #ffffff;
+  border: none;
+  border-bottom: 1px solid #979797;
+  border-radius: 0;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #171717;
+}
+.contact-container .main-content .block-webform-block .webform-ajax-form-wrapper form .webform-button--submit {
+  padding: 0;
+  padding-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid #2d3691;
+  border-radius: 0;
+  color: #2d3691;
+  font-family: "Nitti v500", Arial, sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: transparent;
+  float: right;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.contact-container .main-content .block-webform-block .webform-ajax-form-wrapper form .webform-button--submit:after {
+  content: "→";
+  font-family: "Nitti v500", Arial, sans-serif;
+  font-size: 16px;
+  color: #2d3691;
+  padding-left: 7px;
+}
+.contact-container .main-content .block-webform-block .webform-ajax-form-wrapper form .captcha {
+  margin-bottom: 100px;
+}
+.contact-container .main-content .block-webform-block .webform-ajax-form-wrapper form .captcha iframe {
+  float: left;
+  width: auto;
+  max-height: 80px;
+  height: 100%;
+}
+.contact-container .main-content .block-webform-block .webform-ajax-form-wrapper form .webform-confirmation .webform-confirmation__message p {
+  font-family: "Karla", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #171717;
+  margin-bottom: 30px;
+}
+.contact-container .main-content .block-webform-block .webform-ajax-form-wrapper form .webform-confirmation .webform-confirmation__message p:last-child {
+  font-family: "Nitti v500", Arial, sans-serif;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 520px) {
+  .contact-container .row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-right: 0;
+    flex-wrap: wrap;
+  }
+  .contact-container .row .main-content {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .contact-container .row .sidebar {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 100px;
+  }
+
+  .contact-container .main-content .block-page-title-block .content h1 {
+    margin-top: 0;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */

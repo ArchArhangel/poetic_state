@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@font-face {
+  font-family: 'Nitti v500';
+  src: url('https://assets.website-files.com/5dced91b6467912d0fa28335/5dcee71313d30e206590e710_nitti-normal-v500.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+}
+@font-face {
+  font-family: 'Tiempostextweb';
+  src: url('https://assets.website-files.com/5dced91b6467912d0fa28335/5dceeec5a8c4102732ed4ff0_TiemposTextWeb-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+}
+@font-face {
+  font-family: 'Tiempostextweb';
+  src: url('https://assets.website-files.com/5dced91b6467912d0fa28335/5dceeef96467913893a3a426_TiemposTextWeb-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: auto;
+}
+@font-face {
+  font-family: 'Tiempostextweb';
+  src: url('https://assets.website-files.com/5dced91b6467912d0fa28335/5dceeef9a5aec03b4ada2f2a_TiemposTextWeb-RegularItalic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: auto;
+}
+@font-face {
+  font-family: 'Tiempostextweb';
+  src: url('https://assets.website-files.com/5dced91b6467912d0fa28335/5dceeef9a5aec07afeda2f29_TiemposTextWeb-BoldItalic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+  font-display: auto;
+}
+.news-page-container {
+  max-width: 750px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+}
+.news-page-container .main-content {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333333;
+  font-size: 14px;
+  line-height: 20px;
+}
+.news-page-container .main-content .block-system-main-block .content .node--view-mode-full {
+  .field--name-node-post-date {
+    font-family: 'Nitti v500', Arial, sans-serif;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .field--name-node-title {
+    h2 {
+      font-family: 'Karla', sans-serif;
+      font-size: 40px;
+      line-height: 45px;
+      font-weight: 700;
+      color: #2d3691;
+      margin-bottom: 10px;
+    }
+  }
+  .field--type-text-with-summary {
+    p {
+      font-family: 'Karla', sans-serif;
+      font-size: 22px;
+      line-height: 32px;
+      color: #171717;
+      margin-bottom: 10px;
+    }
+  }
+  .field--type-image {
+    img {
+      max-width: 100%;
+      height: auto;
+      vertical-align: middle;
+      font-family: 'Karla', sans-serif;
+      font-size: 12px;
+      text-align: left;
+      color: #6c6c6c;
+      margin-top: 40px;
+      margin-bottom: 50px;
+    }
+  }
+  .field--type-entity-reference-revisions {
+    .field__item {
+      .paragraph--type--news {
+        font-family: 'Tiempostextweb', 'Times New Roman', sans-serif;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: left;
+        p {
+          color: #171717;
+          margin-bottom: 40px;
+          a {
+            text-decoration: underline;
+          }
+        }
+      }
+      .paragraph--type--quote {
+        font-family: 'Tiempostextweb', 'Times New Roman', sans-serif;
+        font-style: italic;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: left;
+        border-left: 5px solid #e2e2e2;
+        padding: 10px 20px;
+        margin-bottom: 40px;
+      }
+      .paragraph--type--subtitle {
+        font-family: 'Karla', sans-serif;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 700;
+        color: #2d3691;
+        text-align: left;
+        margin: 10px 0;
+      }
+    }
+  }
+}

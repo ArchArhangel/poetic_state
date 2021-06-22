@@ -1,0 +1,61 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the SASS Starterkit subtheme.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\media\Entity\Media;
+use Drupal\file\Entity\File;
+
+/**
+ * Implements hook_form_system_theme_settings_alter() for settings form.
+ *
+ * Replace Barrio setting options with subtheme ones.
+ */
+function poetic_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
+  $form['components']['navbar']['bootstrap_barrio_navbar_top_background']['#options'] = array(
+    'bg-primary' => t('Primary'),
+    'bg-secondary' => t('Secondary'),
+    'bg-light' => t('Light'),
+    'bg-dark' => t('Dark'),
+    'bg-white' => t('White'),
+    'bg-transparent' => t('Transparent'),
+  );
+  $form['components']['navbar']['bootstrap_barrio_navbar_background']['#options'] = array(
+    'bg-primary' => t('Primary'),
+    'bg-secondary' => t('Secondary'),
+    'bg-light' => t('Light'),
+    'bg-dark' => t('Dark'),
+    'bg-white' => t('White'),
+    'bg-transparent' => t('Transparent'),
+  );
+}
+
+function poetic_preprocess_field_group_html_element__node__cases__group_case_studies_challenge(array &$variables) {
+
+  $element = $variables['element'];
+
+  $media = Media::load($variables['element']['field_background'][0]['#plain_text']);
+  $fid = $media->field_media_image->target_id;
+
+  $file = File::load($fid);
+  if ($file != NULL) {
+    $uri = $file->getFileUri();
+    $url = file_url_transform_relative(file_create_url($uri));
+    $variables['background_url'] = $url;
+  }
+
+  if (!empty($element['#title']) && !empty($element['#title_element'])) {
+    $variables['title_element'] = $element['#title_element'];
+    $variables['title'] = $element['#title'];
+    $variables['title_attributes'] = $element['#title_attributes'];
+  }
+
+  $variables['collapsible'] = (!empty($element['#effect']) && $element['#effect'] !== 'none');
+  $variables['wrapper_element'] = $element['#wrapper_element'];
+  $variables['attributes'] = $element['#attributes'];
+  $variables['children'] = (!empty($element['#children'])) ? $element['#children'] : '';
+
+}

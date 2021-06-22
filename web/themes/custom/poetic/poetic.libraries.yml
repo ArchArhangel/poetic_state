@@ -1,0 +1,26 @@
+global-styling:
+  version: VERSION
+  js:
+    js/popper.min.js: {}
+    js/bootstrap.min.js: {}
+    js/barrio.js: {}
+    js/custom.js: {}
+  css:
+    theme:
+      "https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap": { external: true }
+    component:
+      css/style.css: {}
+      css/poetic-style.css: {}
+      css/header/header.css: {}
+      css/main-page/main-page.css: {}
+      css/footer/footer.css: {}
+      css/work/work.css: {}
+      css/services/services.css: {}
+      css/company/company.css: {}
+      css/news/news.css: {}
+      css/contact/contact.css: {}
+      css/contact/privacy.css: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal

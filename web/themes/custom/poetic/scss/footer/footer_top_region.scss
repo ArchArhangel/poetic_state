@@ -1,0 +1,109 @@
+.site-footer {
+  margin-top: 100px;
+}
+.site-footer .container {
+  max-width: 100%;
+  color: #fff;
+  background: #171717;
+}
+.site-footer .region-footer-first {
+  padding-top: 100px;
+  .region_footer_container {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 2.5em;
+  }
+}
+.site-footer .region_footer_container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 90%;
+}
+.site-footer .region-footer-first .region_footer_container #block-letsgetstarted{
+  margin-right: auto;
+  padding-top: 1.5em;
+  h2 {
+    width: 60%;
+    font-family: Karla, sans-serif;
+    color: #fff;
+    font-size: 60px;
+    line-height: 65px;
+    font-weight: bold;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Nitti v500', Arial, sans-serif;
+    &:hover,:active,:focus {
+      text-decoration: none;
+      color: #fff;
+    }
+    &:after {
+      content: "→";
+      font-family: 'Karla', sans-serif;
+      padding-left: 7px;
+      color: #fff;
+    }
+  }
+}
+.site-footer .region-footer-first .region_footer_container #block-footerimage {
+  margin-right: 3em;
+}
+.site-footer .region-footer-first .region_footer_container {
+  #block-getintouch-2 {
+    font-family: 'Tiempostextweb', 'Times New Roman', sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    color: #fff;
+    h2 {
+      font-family: 'Karla', sans-serif;
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .content .field--type-text-with-summary {
+      p {
+        margin-bottom: 0;
+        a {
+          color: #fff;
+          text-decoration: none;
+          cursor: pointer;
+        }
+        &:last-child {
+          margin-top: 20px;
+        }
+      }
+    }
+    .content .field--type-link {
+      a {
+        font-family: 'Nitti v500', Arial, sans-serif;
+        font-size: 16px;
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      a::after {
+        content: "→";
+        font-family: 'Karla', sans-serif;
+        font-size: 16px;
+        color: #fff;
+        padding-left: 7px;
+      }
+    }
+  }
+}
+.site-footer .region-footer-first .region_footer_container #block-homeoffice .field--type-text-with-summary{
+  a {
+    &:after {
+      display: none;
+    }
+  }
+}
+.site-footer .region-footer-first .region_footer_container #block-homeoffice .field--name-field-contact-link-blank {
+  font-family: 'Nitti v500', Arial, sans-serif;
+}
+

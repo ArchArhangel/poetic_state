@@ -1,0 +1,65 @@
+#block-animationonhomepage {
+  margin: 0 -15px;
+  padding: 190px 0;
+  position: relative;
+  text-align: center;
+  background-color: #f4f4f4;
+  .field--name-field-our-company-in-link {
+    position: absolute;
+    top: 180px;
+    left: calc(50% - 55px);
+    a {
+      text-decoration: none;
+      color: #2d3691;
+    }
+    a::after {
+      content: "→";
+      font-family: 'Karla', sans-serif;
+      color: #2d3691;
+      padding-left: 7px;
+    }
+    font-family: 'Nitti v500', Arial, Sans-Serif;
+    font-size: 14px;
+
+  }
+  h2 {
+    margin-top: 20px;
+    font-family: Karla, sans-serif;
+    font-size: 40px;
+    line-height: 45px;
+    font-weight: 700;
+    position: relative;
+    &:after {
+      content: "®";
+      font-size: 10px;
+      position: absolute;
+      //top: -10px;
+      bottom: 8px;
+    }
+  }
+  .field--name-field-our-work-description {
+    font-family: Karla, sans-serif;
+    color: #171717;
+    font-size: 22px;
+    line-height: 32px;
+    max-width: 740px;
+    margin: 0 auto 10px;
+  }
+  .field--name-field-our-work-more {
+    a {
+      color: #2d3691;
+      font-size: 16px;
+      font-family: 'Nitti v500', Arial, sans-serif;
+      text-decoration: none;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #2d3691;
+    }
+    a::after {
+      content: "→";
+      font-family: 'Karla', sans-serif;
+      font-size: 16px;
+      color: #2d3691;
+      padding-left: 16px;
+    }
+  }
+}

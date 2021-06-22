@@ -1,0 +1,57 @@
+<?php
+
+/**
+ * @file
+ * Implements hook_cron().
+ */
+
+use Drupal\node\NodeInterface;
+
+/**
+ *
+ */
+function news_send_cron() {
+//  $time = date("h");
+//  if ($time < 18 && $time >= 10)
+    \Drupal::service('news_send_services')->sendTestMail();
+//  else
+//    \Drupal::service('news_send_services')->clearNewsQueue();
+
+}
+
+/**
+ * Hook check updating node of type news and call function for pushing node id.
+ */
+function news_send_node_update(NodeInterface $node) {
+  if ($node->getType() === 'news') {
+    \Drupal::service('news_send_services')->newsQueuePush($node->id());
+  }
+}
+
+/**
+ * Hook check adding node of type news and call function for pushing node id.
+ */
+function news_send_node_insert(NodeInterface $node) {
+  if ($node->getType() === 'news') {
+    \Drupal::service('news_send_services')->newsQueuePush($node->id());
+  }
+}
+
+/**
+ *
+ */
+function news_send_mail($key, &$message, $params) {
+  $site_name = \Drupal::config('system.site')->get('name');
+  $site_mail = \Drupal::config('system.site')->get('mail');
+
+  switch ($key) {
+    case 'news_send':
+      $message['headers']['Reply-To'] = $site_mail;
+      $message['headers']['Content-Type'] = 'text/html';
+      $message['headers']['From'] = $site_name . '<' . $site_mail . '>';
+      $message['subject'] = $params['subject'];
+      $message['site_logo'] = $params['site_logo'];
+      $message['content'] = $params['content'];
+      break;
+  }
+}

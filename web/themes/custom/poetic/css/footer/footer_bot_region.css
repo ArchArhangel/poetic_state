@@ -1,0 +1,91 @@
+@charset "UTF-8";
+.site-footer .region-footer-third .region_footer_container {
+  padding: 30px 0px;
+  position: relative;
+  flex-direction: column;
+}
+
+.site-footer .region-footer-third .region_footer_container .field--name-field-contact-link {
+  display: none;
+}
+
+.site-footer .region-footer-third .region_footer_container #block-privacypolicy {
+  width: 26%;
+  margin-right: auto;
+  font-size: 11px;
+  z-index: 2;
+  color: #fff;
+}
+.site-footer .region-footer-third .region_footer_container #block-privacypolicy a {
+  text-decoration: underline;
+  color: #fff;
+  cursor: pointer;
+}
+.site-footer .region-footer-third .region_footer_container #block-privacypolicy a:hover {
+  color: #fff;
+}
+
+.page-view-newspage .site-footer .region-footer-third .region_footer_container #block-privacypolicy .field--type-text-with-summary p {
+  color: #fff;
+  font-size: 11px;
+  margin: 0px;
+  line-height: 1rem;
+}
+.page-view-newspage .site-footer .region-footer-third .region_footer_container #block-privacypolicy .field--type-text-with-summary p a {
+  text-decoration: none;
+}
+
+.site-footer .region-footer-third .region_footer_container #block-joinourteam {
+  position: relative;
+  right: 0;
+  bottom: 4em;
+  font-size: 18px;
+  text-align: right;
+}
+.site-footer .region-footer-third .region_footer_container #block-joinourteam p {
+  margin: 0px;
+  font-size: 18px;
+}
+.site-footer .region-footer-third .region_footer_container #block-joinourteam a {
+  color: #fff;
+  font-family: Karla, sans-serif;
+  font-size: 18px;
+}
+.site-footer .region-footer-third .region_footer_container #block-joinourteam a:hover {
+  text-decoration: none;
+}
+.site-footer .region-footer-third .region_footer_container #block-joinourteam .field--type-link {
+  font-weight: bold;
+}
+.site-footer .region-footer-third .region_footer_container #block-joinourteam .field--name-field-contact-link-blank a {
+  color: #fff;
+  font-family: Karla, sans-serif;
+  font-size: 18px;
+}
+.site-footer .region-footer-third .region_footer_container #block-joinourteam .field--name-field-contact-link-blank a:hover {
+  text-decoration: none;
+}
+.site-footer .region-footer-third .region_footer_container #block-joinourteam .field--name-field-contact-link-blank a:after {
+  content: "→";
+  font-family: "Karla", sans-serif;
+  padding-left: 7px;
+  color: #fff;
+}
+
+.site-footer .region-footer-third .region_footer_container #block-socialmedialinks .social-media-links--platforms li span {
+  background: #fff;
+  border-radius: 50%;
+  width: 1.3em;
+  height: 1.3em;
+  padding: 5px;
+}
+.site-footer .region-footer-third .region_footer_container #block-socialmedialinks .social-media-links--platforms li span:before {
+  color: #000;
+  border-radius: 50%;
+  font-size: 14px;
+}
+.site-footer .region-footer-third .region_footer_container #block-socialmedialinks .social-media-links--platforms li a {
+  width: fit-content;
+}
+
+/*# sourceMappingURL=footer_bot_region.css.map */

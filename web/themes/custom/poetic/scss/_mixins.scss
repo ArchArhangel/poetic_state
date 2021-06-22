@@ -1,0 +1,82 @@
+@mixin nittiv500 {
+  @font-face {
+    font-family: 'Nitti v500';
+    src: url('https://assets.website-files.com/5dced91b6467912d0fa28335/5dcee71313d30e206590e710_nitti-normal-v500.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: auto;
+  }
+}
+@mixin appear_from_bottom {
+  @include appear_from_bottom_props;
+  animation: fromBottom 1 .5s forwards;
+  animation-delay: .3s;
+}
+@mixin appear_from_bottom_props{
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity .5s, transform .5s;
+}
+@mixin appear_from_bootom_forJS {
+  @include appear_from_bottom_props;
+
+  &.appear_from_bottom_show{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@mixin appear_from_right_forJS {
+  opacity: 0;
+  transform: translateX(10px);
+  transition: opacity .5s, transform .5s;
+
+  &.appear_from_right_show{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@mixin appear_from_top {
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: fromTop 1 .5s forwards;
+  animation-delay: 1s;
+}
+@mixin appear_from_invisible {
+  opacity: 0;
+  animation: fromInvis 1 .5s forwards;
+  animation-delay: .3s;
+}
+@mixin simple_paragraph_text {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 840px;
+  display: block;
+}
+@keyframes fromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fromInvis {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

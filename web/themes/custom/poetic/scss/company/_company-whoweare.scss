@@ -1,0 +1,71 @@
+.no-gutter {
+  margin: 5% 0 0;
+}
+.container_whoweare > * {
+  padding: 0;
+}
+.container_whoweare {
+  max-width: 100%;
+  padding: 0;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  > div {
+    &:nth-child(2n - 1) {
+      padding: 5%;
+      margin: auto;
+      h2 {
+        color: $primary-color;
+        font-family: 'Nitti v500', Arial, sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+      }
+      .field--name-field-who-we-are-title {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: 0 none #000;
+        font-family: Karla, sans-serif;
+        font-size: 40px;
+        line-height: 45px;
+        font-weight: 700;
+        padding-bottom: 12px;
+        color: #000;
+      }
+      .field--name-field-who-we-are-description {
+        color: #6c6c6c;
+        margin-bottom: 10px;
+        font-family: Karla, sans-serif;
+        font-size: 22px;
+        line-height: 32px;
+      }
+    }
+  }
+}
+.col_who__images .content {
+  position: relative;
+  > div {
+    &:nth-child(2n) {
+      position: absolute;
+      z-index: 2;
+      right: 0px;
+      bottom: -30%;
+      width: 72%;
+      max-width: 600px;
+    }
+  }
+}
+.col_who__images .field__item img {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 1500px) {
+  .container_whoweare > div:nth-child(2n - 1) {
+    padding: 5% 5% 5% 5%;
+    margin: auto 0 auto auto;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 41.66667%;
+    -ms-flex: 0 0 41.66667%;
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
+}
+

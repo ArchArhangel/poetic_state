@@ -1,0 +1,250 @@
+@media (min-width: 1919px) {
+  .page-view-work #main {
+    max-width: 1440px;
+  }
+  .node--type-cases .work-teasers .view-content{
+    width: 100%;
+    max-width: 1440px;
+  }
+  .page-view-work #main .view-display-id-page_1 .work-cases-blocks img{
+    width: 670px;
+    height: auto;
+  }
+  .node--type-cases .block-views-blockwork-block-1 .work-cases-blocks img{
+    width: 700px;
+    height: auto;
+  }
+  .block-views-blockwork-block-1 .work-cases-blocks img{
+    width: 480px;
+    height: auto;
+  }
+  .block-views-blockwork-block-1 .view-content{
+    max-width: 100%;
+  }
+  .node--type-cases .block-views-blockwork-block-1 h2 {
+    max-width: 1440px;
+  }
+  .block-views-blockwork-block-1 h2 {
+    max-width: 1440px;
+  }
+  .node--type-cases .block-views-blockwork-block-1 .view-header {
+    max-width: 1440px;
+  }
+  .block-views-blockwork-block-1 .view-header {
+    max-width: 1440px;
+  }
+}
+@media (max-width: 1918px) {
+  .page-view-work #main {
+    max-width: 1000px;
+  }
+  .node--type-cases .work-teasers .view-content{
+    width: 100%;
+    max-width: 1000px;
+  }
+  .block-views-blockwork-block-1 .work-cases-blocks img{
+    width: 475px;
+    height: auto;
+  }
+  .node--type-cases .block-views-blockwork-block-1 .work-cases-blocks img{
+    width: 475px;
+    height: auto;
+  }
+}
+@media (max-width: 1080px){
+  .node--type-cases .work-teasers .view-content {
+    width: 90%;
+    max-width: 1000px;
+  }
+  .node--type-cases .block-views-blockwork-block-1 .work-cases-blocks img {
+    width: 430px;
+    height: auto;
+  }
+  .node--type-cases .block-views-blockwork-block-1 h2 {
+    padding-left: .5em;
+  }
+  .node--type-cases .block-views-blockwork-block-1 .view-header a{
+    left: 3.5em;
+  }
+}
+@media (max-width: 991px) {
+  .work-teasers .work-cases-blocks {
+    width: 90%;
+  }
+  .work-teasers .work-cases-blocks img{
+    width: 100%;
+    height: auto;
+  }
+  .block-views-blockwork-block-1 h2 {
+    padding-left: .7em;
+    font-size: 32px;
+  }
+  .block-views-blockwork-block-1 .view-header a{
+    left: 2.5%;
+    padding-left: 0em;
+    right: 0%;
+    text-align: left;
+  }
+  .node--type-cases .block-views-blockwork-block-1 h2 {
+    padding-left: 2.2em;
+    font-size: 32px;
+  }
+  .node--type-cases .block-views-blockwork-block-1 .view-header a{
+    left: 4.5em;
+  }
+}
+@media (max-width: 955px) {
+  .node--type-cases .work-teasers .view-content{
+    justify-content: space-around;
+  }
+  .node--type-cases .block-views-blockwork-block-1 h2 {
+    padding-left: 0em;
+    text-align: center;
+    padding-right: 4em;
+  }
+  .node--type-cases .block-views-blockwork-block-1 .view-header a{
+    padding-left: 0em;
+    left: 29.5%;
+    text-align: left;
+  }
+}
+@media (max-width: 939px) {
+  .work-teasers .view-content{
+    justify-content: space-around;
+  }
+  .block-views-blockwork-block-1 h2 {
+    padding-left: 0em;
+    text-align: center;
+    padding-right: 5em;
+  }
+  .block-views-blockwork-block-1 .view-header a{
+    left: 27.5%;
+  }
+}
+@media (max-width: 850px) {
+  .block-views-blockwork-block-1 .view-header a{
+    left: 25.3%;
+  }
+  .node--type-cases .block-views-blockwork-block-1 .view-header a{
+    right: 61.5%;
+    left: auto;
+  }
+  .node--type-cases .block-views-blockwork-block-1 h2 {
+    padding-right: 4em;
+  }
+}
+@media (max-width: 768px) {
+  .block-views-blockwork-block-1 .view-header a{
+    left: 22.5%;
+  }
+  .node--type-cases .block-views-blockwork-block-1 h2 {
+    padding-right: 4em;
+  }
+  .node--type-cases .block-views-blockwork-block-1 .view-header a{
+    right: 62.5%;
+    left: auto;
+  }
+}
+@media (max-width: 720px) {
+  .page-view-work #main {
+    max-width: 90%;
+  }
+  .work-teasers .work-cases-blocks img{
+    width: 100%;
+    height: auto;
+  }
+  .block-views-blockwork-block-1 .view-header a{
+    left: 20.5%;
+  }
+  .node--type-cases .block-views-blockwork-block-1 h2 {
+    padding-right: 4em;
+  }
+  .node--type-cases .block-views-blockwork-block-1 .view-header a{
+    right: 63.5%;
+    left: auto;
+  }
+}
+@media (max-width: 646px) {
+  .block-views-blockwork-block-1 .view-header a{
+    left: 17.5%;
+  }
+  .node--type-cases .block-views-blockwork-block-1 h2 {
+    padding-right: 4em;
+  }
+  .node--type-cases .block-views-blockwork-block-1 .view-header a{
+    right: 65%;
+    left: auto;
+  }
+}
+@media (max-width: 580px) {
+  .block-views-blockwork-block-1 .view-header a{
+    left: 13.5%;
+  }
+  .node--type-cases .block-views-blockwork-block-1 h2 {
+    padding-right: 4em;
+  }
+  .node--type-cases .block-views-blockwork-block-1 .view-header a{
+    right: 67%;
+    left: auto;
+  }
+}
+@media (max-width: 500px) {
+  .work-teasers .work-cases-blocks .field--name-field-service-title {
+    margin-bottom: 1em;
+  }
+  .node--type-cases .work-teasers .work-cases-blocks img{
+    width: 100%;
+    height: auto;
+  }
+  .block-views-blockwork-block-1 h2 {
+    padding-left: 1em;
+    text-align: left;
+    padding-right: 0em;
+  }
+  .block-views-blockwork-block-1 .view-header a{
+    left: 7.5%;
+  }
+  .node--type-cases .block-views-blockwork-block-1 h2 {
+    padding-right: 0em;
+    padding-left: 1.5em;
+    text-align: left;
+  }
+  .node--type-cases .block-views-blockwork-block-1 .view-header a{
+    right: auto;
+    left: 10%;
+  }
+}
+@media (max-width: 460px) {
+  .block-views-blockwork-block-1 h2 {
+    padding-left: .5em;
+  }
+  .block-views-blockwork-block-1 .view-header a{
+    left: 5%;
+  }
+  .node--type-cases .block-views-blockwork-block-1 h2 {
+    padding-right: 0em;
+    padding-left: 1.25em;
+    text-align: left;
+  }
+  .node--type-cases .block-views-blockwork-block-1 .view-header a{
+    right: auto;
+    left: 10%;
+  }
+}
+@media (max-width: 360px) {
+  .block-views-blockwork-block-1 h2 {
+    padding-left: .5em;
+  }
+  .block-views-blockwork-block-1 .view-header a{
+    left: 5%;
+  }
+  .node--type-cases .block-views-blockwork-block-1 h2 {
+    padding-right: 0em;
+    padding-left: .9em;
+    text-align: left;
+  }
+  .node--type-cases .block-views-blockwork-block-1 .view-header a{
+    right: auto;
+    left: 10%;
+  }
+}

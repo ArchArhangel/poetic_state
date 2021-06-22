@@ -1,0 +1,11 @@
+name: "News send queue"
+description: "Creates task for cron that will add published news into queue"
+package: "Custom"
+
+type: module
+core_version_requirement: 9.x
+project: 'news_send'
+
+dependencies:
+  - drupal:swiftmailer
+  - drupal:mailsystem

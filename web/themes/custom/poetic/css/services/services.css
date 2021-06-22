@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@keyframes fromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fromInvis {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@font-face {
+  font-family: "Nitti v500";
+  src: url("https://assets.website-files.com/5dced91b6467912d0fa28335/5dcee71313d30e206590e710_nitti-normal-v500.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+}
+@font-face {
+  font-family: "Tiempostextweb";
+  src: url("https://assets.website-files.com/5dced91b6467912d0fa28335/5dceeec5a8c4102732ed4ff0_TiemposTextWeb-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+}
+@font-face {
+  font-family: "Tiempostextweb";
+  src: url("https://assets.website-files.com/5dced91b6467912d0fa28335/5dceeef96467913893a3a426_TiemposTextWeb-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: auto;
+}
+@font-face {
+  font-family: "Tiempostextweb";
+  src: url("https://assets.website-files.com/5dced91b6467912d0fa28335/5dceeef9a5aec03b4ada2f2a_TiemposTextWeb-RegularItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: auto;
+}
+@font-face {
+  font-family: "Tiempostextweb";
+  src: url("https://assets.website-files.com/5dced91b6467912d0fa28335/5dceeef9a5aec07afeda2f29_TiemposTextWeb-BoldItalic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+  font-display: auto;
+}
+.page-view-service .layout-main-wrapper .services-container {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s, transform 0.5s;
+  animation: fromBottom 1 0.5s forwards;
+  animation-delay: 0.3s;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.page-view-service .layout-main-wrapper .services-container .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.page-view-service .layout-main-wrapper .services-container .main-content {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333333;
+  font-size: 14px;
+  line-height: 20px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.page-view-service .layout-main-wrapper .services-container .main-content .content .view-service .view-content {
+  margin-bottom: 100px;
+}
+
+.page-view-service .layout-main-wrapper .services-container .main-content .content .view-service .view-content .views-row {
+  width: 100%;
+  max-height: 173px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+
+.page-view-service .layout-main-wrapper .services-container .main-content .content .view-service .view-content .views-row .views-field-nothing {
+  border-top: 1px solid #979797;
+  padding: 50px 0;
+}
+.page-view-service .layout-main-wrapper .services-container .main-content .content .view-service .view-content .views-row .views-field-nothing .field-for-js-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.page-view-service .layout-main-wrapper .services-container .main-content .content .view-service .view-content .views-row .views-field-nothing .field-for-js-top .field-for-js-arrow {
+  display: flex;
+  flex-direction: row;
+}
+.page-view-service .layout-main-wrapper .services-container .main-content .content .view-service .view-content .views-row .views-field-nothing .field-for-js-top .field-for-js-arrow .views-field-counter {
+  font-family: "Karla", sans-serif;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+  color: #2d3691;
+  width: 30px;
+  margin-right: 60px;
+}
+.page-view-service .layout-main-wrapper .services-container .main-content .content .view-service .view-content .views-row .views-field-nothing .field-for-js-top .field-for-js-arrow .field-for-js-middle {
+  display: flex;
+  flex-direction: column;
+}
+.page-view-service .layout-main-wrapper .services-container .main-content .content .view-service .view-content .views-row .views-field-nothing .field-for-js-top .field-for-js-arrow .field-for-js-middle .views-field-field-term-primary-headline {
+  font-family: "Karla", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #2d3691;
+  margin-bottom: 10px;
+}
+.page-view-service .layout-main-wrapper .services-container .main-content .content .view-service .view-content .views-row .views-field-nothing .field-for-js-top .field-for-js-arrow .field-for-js-middle .views-field-field-term-secondary-headline {
+  font-family: "Karla", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #6c6c6c;
+  margin-bottom: 10px;
+}
+.page-view-service .layout-main-wrapper .services-container .main-content .content .view-service .view-content .views-row .views-field-nothing .field-for-js-top .block-arrow img {
+  max-width: 100%;
+  vertical-align: middle;
+  display: block;
+  transition: transform 0.5s;
+}
+.page-view-service .layout-main-wrapper .services-container .main-content .content .view-service .view-content .views-row .views-field-nothing .field-for-js-bottom {
+  margin-top: 50px;
+  padding-left: 90px;
+}
+.page-view-service .layout-main-wrapper .services-container .main-content .content .view-service .view-content .views-row .views-field-nothing .field-for-js-bottom .views-field-field-term-description {
+  font-family: "Tiempostextweb", "Times New Roman", sans-serif;
+  font-size: 14px;
+  line-height: 28px;
+  color: #171717;
+  margin-bottom: 20px;
+}
+.page-view-service .layout-main-wrapper .services-container .main-content .content .view-service .view-content .views-row .views-field-nothing .field-for-js-bottom .views-field-field-poetic-partners {
+  font-family: "Karla", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #2d3691;
+  margin-bottom: 10px;
+}
+.page-view-service .layout-main-wrapper .services-container .main-content .content .view-service .view-content .views-row .views-field-nothing .field-for-js-bottom .block-partners {
+  display: flex;
+  flex-direction: row;
+}
+.page-view-service .layout-main-wrapper .services-container .main-content .content .view-service .view-content .views-row .views-field-nothing .field-for-js-bottom .block-partners .views-field-field-partners-linked, .page-view-service .layout-main-wrapper .services-container .main-content .content .view-service .view-content .views-row .views-field-nothing .field-for-js-bottom .block-partners .views-field-field-our-partners {
+  font-family: "Karla", sans-serif;
+  font-size: 22px;
+  line-height: 30px;
+  color: #171717;
+  margin-bottom: 10px;
+}
+.page-view-service .layout-main-wrapper .services-container .main-content .content .view-service .view-content .views-row .views-field-nothing .field-for-js-bottom .block-partners .views-field-field-partners-linked a {
+  color: #171717;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.page-view-service .layout-main-wrapper .services-container .main-content .content .view-service .view-content .views-row.field-for-js-services {
+  max-height: 700px;
+  transition: max-height 0.5s;
+}
+
+.field-for-js-services .block-arrow img {
+  transform: rotate(180deg);
+  transition: transform 0.5s;
+}
+
+.page-view-service .layout-main-wrapper .services-container .main-content #block-servicesalone .content .field--name-body .services-alone {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s, transform 0.5s;
+  animation: fromBottom 1 0.5s forwards;
+  animation-delay: 0.3s;
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+.page-view-service .layout-main-wrapper .services-container .main-content #block-servicesalone .content .field--name-body .services-alone .services-alone-left {
+  max-width: 30%;
+}
+.page-view-service .layout-main-wrapper .services-container .main-content #block-servicesalone .content .field--name-body .services-alone .services-alone-left p {
+  font-family: "Nitti v500", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: #2d3691;
+}
+.page-view-service .layout-main-wrapper .services-container .main-content #block-servicesalone .content .field--name-body .services-alone .services-alone-right {
+  max-width: 70%;
+}
+.page-view-service .layout-main-wrapper .services-container .main-content #block-servicesalone .content .field--name-body .services-alone .services-alone-right h2 {
+  font-family: "Karla", sans-serif;
+  font-size: 40px;
+  line-height: 45px;
+  font-weight: 700;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #2D3691, #45C896);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #2D3691;
+}
+.page-view-service .layout-main-wrapper .services-container .main-content #block-servicesalone .content .field--name-body .services-alone .services-alone-right p {
+  font-family: "Karla", sans-serif;
+  font-size: 22px;
+  line-height: 32px;
+  color: #6c6c6c;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 998px) {
+  .page-view-service .layout-main-wrapper .services-container .main-content #block-servicesalone .content .field--name-body .services-alone {
+    flex-wrap: wrap;
+    padding: 0 15px;
+  }
+
+  .page-view-service .layout-main-wrapper .services-container .main-content .content .view-service .view-content .views-row .views-field-nothing {
+    padding: 3.125rem 10px;
+  }
+}
+@media (max-width: 520px) {
+  .page-view-service .layout-main-wrapper .services-container .main-content #block-servicesalone .content .field--name-body .services-alone {
+    flex-wrap: wrap;
+  }
+  .page-view-service .layout-main-wrapper .services-container .main-content #block-servicesalone .content .field--name-body .services-alone .services-alone-left, .page-view-service .layout-main-wrapper .services-container .main-content #block-servicesalone .content .field--name-body .services-alone .services-alone-right {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .page-view-service .layout-main-wrapper .services-container .main-content .content .view-service .view-content .views-row .views-field-nothing {
+    border-top: 1px solid #979797;
+    padding: 3.125rem 10px;
+  }
+}
+@media (max-width: 520px) {
+  .page-view-service .layout-main-wrapper .services-container .main-content .content .view-service .view-content .views-row.field-for-js-services {
+    max-height: 900px;
+  }
+
+  .page-view-service .layout-main-wrapper .services-container .main-content .content .view-service .view-content .views-row {
+    max-height: 200px;
+  }
+}
+
+/*# sourceMappingURL=services.css.map */

@@ -1,0 +1,25 @@
+@media (max-width: 1200px) {
+  .paragraph--type--two-images {
+    .field--name-field-two-images {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .field__item {
+        width: 70%;
+        .field--name-field-media-image {
+          .field__item {
+            img {
+              margin-bottom: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 840px){
+  .paragraph--type--cases-quote {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}

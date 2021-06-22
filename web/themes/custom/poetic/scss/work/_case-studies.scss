@@ -1,0 +1,284 @@
+@import "extends";
+@import "../mixins";
+@import "../../node_modules/bootstrap/scss/mixins/grid";
+@import "../../node_modules/bootstrap/scss/mixins/breakpoints";
+@include nittiv500;
+
+.cases-container-wrapper {
+  #case-studies-challenge {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding-top: 60px;
+    background-position: 0 0, 50% 80%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, scroll;
+    .field-group-case-container {
+      width: 700px;
+      max-width: 90%;
+      margin-right: auto;
+      margin-left: auto;
+      color: white;
+      .field--name-field-background {
+        display: none;
+      }
+      .case-studies__field__image {
+        display: flex;
+        height: 34px;
+        & > h5 {
+          font-family: 'Nitti v500', Arial, sans-serif;
+          font-size: 14px;
+          line-height: 14px;
+          font-weight: 400;
+          margin: 0;
+          align-self: center;
+          text-transform: uppercase;
+        }
+        img {
+          width: 115px;
+          max-width: 100%;
+          height: auto;
+          vertical-align: middle;
+        }
+        img[alt="Camden Logo"] {
+          position: relative;
+          bottom: 6px;
+        }
+        & > div {
+          margin-left: 10px;
+          padding-left: 10px;
+          border-left: 1px solid #fff;
+          height: 100%;
+        }
+      }
+
+      .field--name-body {
+        font-family: Karla, sans-serif;
+        color: #fff;
+        margin: 40px auto 0px;
+        text-align: left;
+        .field__label {
+          margin-right: 40px;
+          margin-bottom: 20px;
+          font-size: 40px;
+          line-height: 45px;
+          font-weight: 300;
+        }
+        p {
+          margin: 0;
+          font-size: 16px;
+          line-height: 26px;
+          font-weight: 400;
+        }
+      }
+
+      #achievment-execution-time {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 70px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border-top: 1px solid hsla(0, 0%, 100%, 0.5);
+        border-bottom: 1px solid hsla(0, 0%, 100%, 0.5);
+        text-align: center;
+        font-family: Karla, sans-serif;
+        color: #fff;
+        .field--name-field-execution-time {
+          width: max-content;
+          background-color: hsla(0, 0%, 100%, 0.1);
+          padding: 0 5px 0 5px;
+          font-size: 16px;
+          line-height: 26px;
+          font-weight: 400;
+        }
+        .field--name-field-achievments {
+          @include make-row(0);
+          margin-top: 30px;
+          & > .field__item {
+            width: 25%;
+            .field--name-field-percentage {
+              font-family: Tiempostextweb, 'Times New Roman', sans-serif;
+              color: #fff;
+              font-size: 30px;
+              line-height: 35px;
+              font-weight: 700;
+            }
+            .field--name-field-achivement-description {
+              margin-top: 10px;
+              margin-bottom: 0px;
+              color: #fff;
+              font-size: 14px;
+              line-height: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #paint-points-and-service-wrapper {
+    background-color: white;
+    padding: 100px 0 100px;
+    #paint-points-and-service {
+      display:flex;
+      width: 800px;
+      max-width: 90%;
+      margin: auto;
+      .field--name-field-pain-points {
+        width: 25%;
+        padding-right: 30px;
+        & > .field__label {
+          @extend %case-title;
+        }
+        .field__items {
+          .field__item {
+            @extend %case-list;
+          }
+        }
+      }
+
+      #service-and-skills {
+        width: 75%;
+        padding-left: 30px;
+        .field--name-field-service-title {
+          @extend %case-title;
+        }
+        .field--name-field-skills-technology {
+          & > .field__label {
+            font-family: Karla, sans-serif;
+            color: #6c6c6c;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+          }
+          .field__items {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            .field__item {
+              @extend %case-list;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .field--name-field-page-content {
+    .paragraph--type--two-images-gray-bg-paragraph {
+      @extend %case-paragraph-background;
+      overflow: hidden;
+      .paragraph--type--two-images-gray-bg-paragraph-content {
+        .field--name-field-cases-with-titles {
+          .field__item {
+            font-family: Karla, sans-serif;
+            opacity: 1;
+            transition: opacity 1s;
+            .field--name-field-subtitle {
+              @extend %case-title;
+              margin: 0 0 10px 0;
+              font-size: 18px;
+              padding: 0;
+            }
+            .field--name-field-text {
+              @extend %case-paragraph-field-text;
+            }
+          }
+
+          .hide {
+            opacity: 0;
+          }
+        }
+        #images-wrapper {
+          display: flex;
+          align-items: center;
+          width: calc(65% - 60px);
+          position: relative;
+          .field--name-field-bigger-image {
+            flex: 0 0 auto;
+            align-self: self-start;
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+          .field--name-field-smaller-image {
+            flex: 0 0 auto;
+            position: relative;
+            right: 70px;
+            img {
+              max-width: 100%;
+              width: 216px;
+              height: auto;
+              flex: 0 0 auto;
+            }
+          }
+        }
+      }
+    }
+
+    .paragraph--type--big-image-gray-backround-paragra {
+      @extend %case-paragraph-background;
+      .paragraph--type--big-image-gray-backround-paragra-content {
+        .cases-description {
+          font-family: Karla, sans-serif;
+          opacity: 1;
+          transition: opacity 1s;
+          padding-right: 60px;
+
+          .field--name-field-descriptions-title {
+            @extend %case-title;
+            margin: 0 0 10px 0;
+            font-size: 18px;
+            padding: 0;
+          }
+
+          .field--name-field-descriptions-text {
+            & > .field__item {
+              @extend %case-paragraph-field-text;
+              padding: 0;
+              padding-bottom: 20px;
+              margin-bottom: 20px;
+
+              &:last-child {
+                border: none;
+              }
+            }
+          }
+        }
+        .hide {
+          opacity: 0;
+        }
+        #case-images-wrapper {
+          display: flex;
+          align-items: center;
+          #case-images-content {
+            position: absolute;
+            right: 0;
+            .field--name-field-image {
+              max-width: 100%;
+              img {
+                margin-left: -5px;
+                width: 54vw;
+                height: auto;
+              }
+            }
+            .field--name-field-mobile-image {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .cases-container {
+    max-width: 100%;
+  }
+  #content {
+    padding: 0;
+  }
+}

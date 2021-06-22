@@ -1,0 +1,43 @@
+.header .navbar {
+  background-color: #171717;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.navbar-dark .navbar-nav .nav-link, .nav-link {
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 0px;
+  font-family: 'Nitti v500', Arial, sans-serif;
+  color: #fff;
+}
+.navbar .container {
+  width: 100%;
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 15px;
+}
+.navbar-nav .nav-link {
+  padding: 0;
+}
+.navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .nav-link.active {
+  border-bottom: 1px solid #fff;
+}
+@media (min-width: 1480px) {
+  .navbar .container {
+    padding: 0;
+  }
+}
+@media (max-width: 992px) {
+  .navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .nav-link.active {
+    border-bottom: none;
+  }
+  .navbar-dark .navbar-nav .nav-link, .nav-link {
+    margin: 20px 0 0;
+  }
+  .navbar-dark .navbar-toggler {
+    border: none;
+  }
+}
+

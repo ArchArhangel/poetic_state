@@ -1,0 +1,18 @@
+@media screen and (max-width: 990px){
+  .block-views-blockhomepage-our-work-block-1 .blazy--grid .list-group-item{
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 575px){
+  .block-views-blockhomepage-our-work-block-1{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 393px){
+  .block-views-blockhomepage-our-work-block-1 .blazy--grid .list-group-item{
+    width: 100%;
+  }
+}

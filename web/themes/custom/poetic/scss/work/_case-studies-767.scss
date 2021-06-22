@@ -1,0 +1,71 @@
+@media screen and (max-width: 767px) {
+  .cases-container-wrapper {
+    #case-studies-challenge {
+      .field-group-case-container {
+        .field--name-body {
+          .field__label {
+            font-size: 32px;
+            line-height: 38px;
+          }
+
+          p {
+            line-height: 24px;
+          }
+        }
+
+        #achievment-execution-time {
+          .field--name-field-achievments > .field__item {
+            width: 50%;
+            margin-bottom: 20px;
+            padding-right: 20px;
+            padding-left: 20px;
+          }
+        }
+      }
+    }
+
+    #paint-points-and-service-wrapper {
+      #paint-points-and-service {
+        flex-direction: column;
+        .field--name-field-pain-points, #service-and-skills {
+          width: 100%;
+          padding: 0 15px 0;
+        }
+        .field--name-field-pain-points {
+          padding-bottom: 10px;
+        }
+        #service-and-skills {
+          margin-top: 30px;
+        }
+      }
+    }
+
+    .field--name-field-page-content {
+      .paragraph--type--two-images-gray-bg-paragraph {
+        .paragraph--type--two-images-gray-bg-paragraph-content {
+          flex-direction: column-reverse;
+          .field--name-field-cases-with-titles {
+            margin-bottom: 40px;
+            & > .field__item {
+              width: 50%;
+              padding: 0;
+              &:nth-child(odd) {
+                padding-right: 40px;
+              }
+              .field--name-field-text {
+                padding: 0;
+                margin: 0;
+              }
+            }
+          }
+          #images-wrapper {
+            margin-bottom: 60px;
+          }
+        }
+      }
+    }
+  }
+  .cases-container-wrapper #paint-points-and-service-wrapper #paint-points-and-service .field--name-field-pain-points .field__items .field__item, .cases-container-wrapper #paint-points-and-service-wrapper #paint-points-and-service #service-and-skills .field--name-field-skills-technology .field__items .field__item {
+    padding: 0 5px 0 0;
+  }
+}

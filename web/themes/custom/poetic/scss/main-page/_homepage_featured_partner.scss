@@ -1,0 +1,101 @@
+@import "../mixins";
+.appear_from_bottom {
+  @include appear_from_bottom;
+}
+.partner-container {
+  max-width: 1440px;
+}
+#block-homepagefeatured {
+  .images-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-items: flex-end;
+    margin-right: auto;
+    width: min-content;
+  }
+  padding: 190.5px 0;
+
+  width: 1440px;
+  min-height: 891px;
+  margin: 0 auto;
+  .field--name-field-featured-small-title {
+    margin-left: 5px;
+    max-width: 460px;
+    color: #2d3691;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'Nitti v500', Arial, sans-serif;
+  }
+  .field--name-field-featured-big-title {
+    margin-top: 30px;
+    margin-left: 5px;
+    //max-width: 460px;
+    font-family: Karla, sans-serif;
+    font-size: 48px;
+    line-height: 1;
+    font-weight: bold;
+  }
+  .field--name-body {
+    margin-top:20px;
+    margin-left: 5px;
+    max-width: 460px;
+    font-family: Karla, sans-serif;
+    color: #6c6c6c;
+    font-size: 22px;
+    line-height: 32px;
+
+  }
+  .field--name-field-featured-class {
+    margin-top:30px;
+    margin-left: 5px;
+    max-width: 460px;
+    font-family: Karla, sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    h3 {
+      font-size: 18px;
+      color: #2d3691;
+      margin-bottom: 0;
+    }
+    p {
+      color: #333;
+    }
+  }
+  .field--name-field-featured-big-image {
+    background-color: hsla(0, 0%, 9%, 0.2);
+    margin: 0;
+    width: min-content;
+    img {
+      position: relative;
+      z-index: -1;
+      width: 510px;
+      height: 510px;
+    }
+  }
+  .field--name-field-featured-small-image {
+    margin-right: -80px;
+    img {
+      width: 272px;
+      height: 448.5px;
+    }
+  }
+  .field--name-field-featured-readfull-link {
+    position: absolute;
+    top: 30px;
+    left: 45%;
+    a {
+      font-family: 'Nitti v500', Arial, sans-serif;
+      text-decoration: none;
+      font-size: 16px;
+      color: #fff;
+    }
+    a:after {
+      content: "→";
+      font-family: 'Karla', sans-serif;
+      font-size: 16px;
+      color: #fff;
+      padding-left: 7px;
+    }
+  }
+}

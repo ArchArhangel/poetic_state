@@ -1,0 +1,38 @@
+@media (max-width: 1110px) {
+  #block-views-block-what-can-we-build-together-block-1 {
+    padding: 40px;
+    h2 {
+      margin-top: 60px;
+      margin-left: 0;
+    }
+    .field--name-field-our-company-in-link {
+      position: absolute;
+      top: 40px;
+      left: 0;
+    }
+    .content {
+      .view-content {
+        margin-left: 0;
+        padding: 0;
+      }
+      .view-header {
+        a {
+          position: absolute;
+          top: 70px;
+          left: 40px;
+
+        }
+      }
+      .view-footer {
+        margin-left: 0;
+      }
+    }
+  }
+}
+@media (max-width: 700px) {
+  #block-views-block-what-can-we-build-together-block-1 {
+    h2 {
+      font-size: 32px;
+    }
+  }
+}
